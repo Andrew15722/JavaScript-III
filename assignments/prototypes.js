@@ -27,6 +27,7 @@ GameObject.prototype.destroy = function() {
 
 //=== CharacterStats////////////////////////////
 const CharacterStats = function (obj) {
+  GameObject.call(this, obj);
   //* healthPoints
   this.healthPoints = obj.healthPoints
 }  
@@ -42,6 +43,7 @@ CharacterStats.prototype.takeDamage = function () {
 
 // Humanoid (Having an appearance or character resembling that of a human.)
 const Humanoid = function(obj) {
+  CharacterStats.call(this, obj);
   //* team
   this.team = obj.team,
   //* weapons

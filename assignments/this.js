@@ -49,5 +49,5 @@ let sayAge = function (hobby1, hobby2, hobby3) {
 };
 
 let hobbies =['running', 'lifting weights', 'coding']
-// sayAge.call(me, ...hobbies);  // <== explicit binding here 
+sayAge.call(me, ...hobbies);  // <== explicit binding here 
 
