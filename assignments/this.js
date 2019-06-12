@@ -1,3 +1,4 @@
+
 /* The for principles of "this";
 * in your own words. explain the four principle for the "this" keyword below.
 *
@@ -27,8 +28,8 @@ let me = {
         console.log('implicit binding = '  + this.age); // <== implicit binding here 
     }
 } 
-console.log(me.sayAge());
-console.log(me.name);
+// console.log(me.sayAge());
+// console.log(me.name);
 
 // Principle 3
 // code example for New Binding
@@ -39,7 +40,7 @@ let Dog = function(breed, color, size) { //making a constructor function here. s
 }   
 
 let jack = new Dog('German Shepherd', 'Brown and Black', 'big')
-console.log(jack.breed)  //<== new binding here
+// console.log(jack.breed)  //<== new binding here
 
 // Principle 4
 // code example for Explicit Binding
@@ -48,4 +49,5 @@ let sayAge = function (hobby1, hobby2, hobby3) {
 };
 
 let hobbies =['running', 'lifting weights', 'coding']
-sayAge.call(me, ...hobbies);  // <== explicit binding here 
+// sayAge.call(me, ...hobbies);  // <== explicit binding here 
+
